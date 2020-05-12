@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		BFAFFACC246A4C5000FD671D /* StaticVC.h in Headers */ = {isa = PBXBuildFile; fileRef = BFAFFACA246A4C5000FD671D /* StaticVC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFAFFAD5246A4C5F00FD671D /* StaticViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BFAFFAD2246A4C5F00FD671D /* StaticViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFAFFAD6246A4C5F00FD671D /* StaticViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFAFFAD3246A4C5F00FD671D /* StaticViewController.m */; };
+		BFAFFAD7246A4C5F00FD671D /* StaticViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFAFFAD4246A4C5F00FD671D /* StaticViewController.xib */; };
+		BFAFFB27246A8A2900FD671D /* img.png in Resources */ = {isa = PBXBuildFile; fileRef = BFAFFB23246A898500FD671D /* img.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BFAFFAC7246A4C5000FD671D /* StaticVC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StaticVC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFAFFACA246A4C5000FD671D /* StaticVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StaticVC.h; sourceTree = "<group>"; };
 		BFAFFACB246A4C5000FD671D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFAFFAD2246A4C5F00FD671D /* StaticViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StaticViewController.h; sourceTree = "<group>"; };
+		BFAFFAD3246A4C5F00FD671D /* StaticViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StaticViewController.m; sourceTree = "<group>"; };
+		BFAFFAD4246A4C5F00FD671D /* StaticViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StaticViewController.xib; sourceTree = "<group>"; };
+		BFAFFB23246A898500FD671D /* img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,8 +54,12 @@
 		BFAFFAC9246A4C5000FD671D /* StaticVC */ = {
 			isa = PBXGroup;
 			children = (
+				BFAFFB23246A898500FD671D /* img.png */,
 				BFAFFACA246A4C5000FD671D /* StaticVC.h */,
 				BFAFFACB246A4C5000FD671D /* Info.plist */,
+				BFAFFAD2246A4C5F00FD671D /* StaticViewController.h */,
+				BFAFFAD3246A4C5F00FD671D /* StaticViewController.m */,
+				BFAFFAD4246A4C5F00FD671D /* StaticViewController.xib */,
 			);
 			path = StaticVC;
 			sourceTree = "<group>";
@@ -60,6 +72,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFAFFACC246A4C5000FD671D /* StaticVC.h in Headers */,
+				BFAFFAD5246A4C5F00FD671D /* StaticViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +134,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFAFFAD7246A4C5F00FD671D /* StaticViewController.xib in Resources */,
+				BFAFFB27246A8A2900FD671D /* img.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFAFFAD6246A4C5F00FD671D /* StaticViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +284,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = xsk.StaticVC;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -290,6 +307,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = xsk.StaticVC;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;

@@ -15,5 +15,5 @@ FOUNDATION_EXPORT double StaticVCVersionNumber;
 FOUNDATION_EXPORT const unsigned char StaticVCVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <StaticVC/PublicHeader.h>
-
+#import <StaticVC/StaticViewController.h>
 
